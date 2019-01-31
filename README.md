@@ -29,7 +29,7 @@ You can visit http://34.204.45.127 for the website deployed.
 3. Open your terminal and type in
 	```chmod 600 ~/.ssh/udacity_key.rsa```
 4. In your terminal, type in
-	```ssh -i ~/.ssh/udacity_key.rsa root@<Public IP>```
+	```ssh -i ~/.ssh/udacity_key.rsa root@34.204.45.127```
 5. Development Environment Information
 
 	34.204.45.127
@@ -62,7 +62,7 @@ You can visit http://34.204.45.127 for the website deployed.
 3. reload SSH using `service ssh restart`
 4. now you can use ssh to login with the new user you created
 
-	`ssh -i [privateKeyFilename] grader@<Public IP>`
+	`ssh -i [privateKeyFilename] grader@34.204.45.127`
 
 ## Update all currently installed packages
 
@@ -140,7 +140,7 @@ Configure the Uncomplicated Firewall (UFW) to only allow incoming connections fo
 	
 	```
 	<VirtualHost *:80>
-		ServerName <Public IP>
+		ServerName 34.204.45.127
 		ServerAdmin dcsiona@gmail.com
 		WSGIScriptAlias / /var/www/FlaskApp/flaskapp.wsgi
 		<Directory /var/www/FlaskApp/FlaskApp/>
