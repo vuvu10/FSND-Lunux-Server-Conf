@@ -34,7 +34,7 @@ You can visit http://34.204.45.127 for the website deployed.
 
 	34.204.45.127
 
-	Private Key ( is not provided here. )
+	Public Key: /.ssh/id_rsa.pub.
 
 ## Create a new user named grader
 1. `sudo adduser grader`
