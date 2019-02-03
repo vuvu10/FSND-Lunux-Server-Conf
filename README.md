@@ -3,7 +3,7 @@ This is the project for "Full Stack Web Developer Nanodegree" on Udacity.
 
 In this project, a Linux virtual machine needs to be configurated to support the Item Catalog website.
 
-You can visit http://34.204.45.127 for the website deployed.
+You can visit http://54.221.105.174 for the website deployed.
 
 ## Tasks
 1. Launch your Virtual Machine with your Udacity account
@@ -32,9 +32,10 @@ You can visit http://34.204.45.127 for the website deployed.
 	```ssh -i ~/.ssh/udacity_key.rsa root@34.204.45.127```
 5. Development Environment Information
 
-	34.204.45.127
+	54.221.105.174
 
-	Public Key: /.ssh/id_rsa.pub.
+	Public Key: "grader"
+	Password: "root"
 
 ## Create a new user named grader
 1. `sudo adduser grader`
@@ -140,7 +141,7 @@ Configure the Uncomplicated Firewall (UFW) to only allow incoming connections fo
 	
 	```
 	<VirtualHost *:80>
-		ServerName 34.204.45.127
+		ServerName 54.221.105.174
 		ServerAdmin dcsiona@gmail.com
 		WSGIScriptAlias / /var/www/FlaskApp/flaskapp.wsgi
 		<Directory /var/www/FlaskApp/FlaskApp/>
